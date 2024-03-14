@@ -1,7 +1,7 @@
 function determineShift() {
     const shift = document.getElementById("shift").value;
     const inputDate = new Date(document.getElementById("date").value);
-    const startDate = new Date("2024-03-17"); // Starting from March 14, 2024
+    const startDate = new Date("2024-03-17"); // Starting from March 17, 2024
   
     const timeDiff = inputDate - startDate;
     const dayDiff = Math.floor(timeDiff / (24 * 60 * 60 * 1000));
@@ -28,7 +28,7 @@ function determineShift() {
         if (cycleDay < 3) {
             result += `(Day ${cycleDay + 4} off duty)`;
         } else if (cycleDay < 6){
-            result += `( Day ${cycleDay - 2}) morning duty`;
+            result += `( Day ${cycleDay - 2} morning duty)`;
         }
          else if (cycleDay < 9) {
             result += `(Day ${cycleDay - 5} night duty)`;
