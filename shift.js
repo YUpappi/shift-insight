@@ -1,4 +1,4 @@
-function determineShift() {
+function shiftDeterminant() {
     const shift = document.getElementById("shift").value;
     const inputDate = new Date(document.getElementById("date").value);
     const startDate = new Date("2024-03-17"); // Starting from March 17, 2024
